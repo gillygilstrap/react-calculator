@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/gillygilstrap/react-calculator/precache-manifest.b920b90205e0fc9b3a5461f6133fef6f.js"
+  "/react-calculator/precache-manifest.f68df5d966262a45b0fe6352e13145f1.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/gillygilstrap/react-calculator/index.html", {
+workbox.routing.registerNavigationRoute("/react-calculator/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

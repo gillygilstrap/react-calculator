@@ -1,13 +1,13 @@
 {
-  "main.css": "/gillygilstrap/react-calculator/static/css/main.4dbb3b76.chunk.css",
-  "main.js": "/gillygilstrap/react-calculator/static/js/main.698ac540.chunk.js",
-  "main.js.map": "/gillygilstrap/react-calculator/static/js/main.698ac540.chunk.js.map",
-  "static/js/1.4a34e45d.chunk.js": "/gillygilstrap/react-calculator/static/js/1.4a34e45d.chunk.js",
-  "static/js/1.4a34e45d.chunk.js.map": "/gillygilstrap/react-calculator/static/js/1.4a34e45d.chunk.js.map",
-  "runtime~main.js": "/gillygilstrap/react-calculator/static/js/runtime~main.40a19eaa.js",
-  "runtime~main.js.map": "/gillygilstrap/react-calculator/static/js/runtime~main.40a19eaa.js.map",
-  "static/css/main.4dbb3b76.chunk.css.map": "/gillygilstrap/react-calculator/static/css/main.4dbb3b76.chunk.css.map",
-  "index.html": "/gillygilstrap/react-calculator/index.html",
-  "precache-manifest.b920b90205e0fc9b3a5461f6133fef6f.js": "/gillygilstrap/react-calculator/precache-manifest.b920b90205e0fc9b3a5461f6133fef6f.js",
-  "service-worker.js": "/gillygilstrap/react-calculator/service-worker.js"
+  "main.css": "/react-calculator/static/css/main.4dbb3b76.chunk.css",
+  "main.js": "/react-calculator/static/js/main.b0d483eb.chunk.js",
+  "main.js.map": "/react-calculator/static/js/main.b0d483eb.chunk.js.map",
+  "static/js/1.4a34e45d.chunk.js": "/react-calculator/static/js/1.4a34e45d.chunk.js",
+  "static/js/1.4a34e45d.chunk.js.map": "/react-calculator/static/js/1.4a34e45d.chunk.js.map",
+  "runtime~main.js": "/react-calculator/static/js/runtime~main.a2ecf2e6.js",
+  "runtime~main.js.map": "/react-calculator/static/js/runtime~main.a2ecf2e6.js.map",
+  "static/css/main.4dbb3b76.chunk.css.map": "/react-calculator/static/css/main.4dbb3b76.chunk.css.map",
+  "index.html": "/react-calculator/index.html",
+  "precache-manifest.f68df5d966262a45b0fe6352e13145f1.js": "/react-calculator/precache-manifest.f68df5d966262a45b0fe6352e13145f1.js",
+  "service-worker.js": "/react-calculator/service-worker.js"
 }
