@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { TweenMax, Bounce, Power0 } from "gsap/all"
 
 class App extends Component {
   constructor() {
@@ -12,6 +13,65 @@ class App extends Component {
       activeValue: 0,
       value: 0
     }
+  }
+
+  componentDidMount() {
+    let title = document.getElementById('test')
+    let btn7 = document.getElementById('btn-7')
+    let btn8 = document.getElementById('btn-8')
+    let btn9 = document.getElementById('btn-9')
+    let divide = document.getElementById('divide')
+
+    let btn4 = document.getElementById('btn-4')
+    let btn5 = document.getElementById('btn-5')
+    let btn6 = document.getElementById('btn-6')
+    let times = document.getElementById('times')
+
+    let btn1 = document.getElementById('btn-1')
+    let btn2 = document.getElementById('btn-2')
+    let btn3 = document.getElementById('btn-3')
+    let minus = document.getElementById('minus')
+
+    let btn0 = document.getElementById('btn-0')
+    let dbl = document.getElementById('dbl')
+    let dot = document.getElementById('dot')
+    let plus = document.getElementById('plus')
+
+    let equalBtn = document.getElementById('equalBtn')
+    let clearBtn = document.getElementById('clearBtn')
+
+    let titleBox = document.getElementById('title-box')
+    let calcContainer = document.getElementById('calc-container')
+    let calcBox = document.getElementById('calc-box')
+
+
+    TweenMax.from(title, 2.5, { ease: Bounce.easeOut, y: -500 } )
+    TweenMax.from(btn7, 1.5, {y: 0, x:-1500 })
+    TweenMax.from(btn8, 1, {y: 0, x:-1500 })
+    TweenMax.from(btn9, 1, {y: 0, x:1500 })
+    TweenMax.from(divide, 1.5, {y: 0, x:1500 })
+
+    TweenMax.from(btn4, 1.5, {y: 0, x:-1500 })
+    TweenMax.from(btn5, 1, {y: 0, x:-1500 })
+    TweenMax.from(btn6, 1, {y: 0, x:1500 })
+    TweenMax.from(times, 1.5, {y: 0, x:1500 })
+
+    TweenMax.from(btn1, 1.5, {y: 0, x:-1500 })
+    TweenMax.from(btn2, 1, {y: 0, x:-1500 })
+    TweenMax.from(btn3, 1, {y: 0, x:1500 })
+    TweenMax.from(minus, 1.5, {y: 0, x:1500 })
+
+    TweenMax.from(btn0, 1.5, {y: 0, x:-1500 })
+    TweenMax.from(dbl, 1, {y: 0, x:-1500 })
+    TweenMax.from(dot, 1, {y: 0, x:1500 })
+    TweenMax.from(plus, 1.5, {y: 0, x:1500 })
+
+    TweenMax.from(clearBtn, 1.5, {y: 0, x:-1500 })
+    TweenMax.from( equalBtn, 3, {delay:1.5, opacity: 0})
+
+    TweenMax.from(titleBox, .1, {y: 0, x:-1500 })
+    TweenMax.from(calcContainer, .5, {y: 1500, x:0 })
+    TweenMax.from(calcBox, .5, {y: 1500, x:0 })
   }
   handleNumberClick = (number) => {
     let stateArr;
@@ -164,12 +224,12 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <div className="calc-box">
-        <div className="title-box">
-          <h1>React <i class="fab fa-react"></i> Calculator</h1>
+        <div id="calc-box" className="calc-box">
+        <div id="title-box"className="title-box">
+          <h1>React <i id="test" class="fab fa-react"></i> Calculator</h1>
           {/* <h1>React.js Calculator</h1> */}
         </div>
-          <div className="calc-container">
+          <div id="calc-container" className="calc-container">
             <div className="screen-box">
               <div className="operator-box">
               {!activeOperator? '' : operatorSymbol}
@@ -177,32 +237,32 @@ class App extends Component {
               <input type="text" className="screen" value={inputDisplay}/>
             </div>
             <div className="keypad-box">
-                <button className="num-button" onClick={() => this.handleNumberClick(7)}>7</button>
-                <button className="num-button" onClick={() => this.handleNumberClick(8)}>8</button>
-                <button className="num-button" onClick={() => this.handleNumberClick(9)}>9</button>
-                <button className="operator-button" onClick={() => this.handleOperatorClick('divide')}>&#247;</button>
+                <button id="btn-7" className="num-button" onClick={() => this.handleNumberClick(7)}>7</button>
+                <button id="btn-8" className="num-button" onClick={() => this.handleNumberClick(8)}>8</button>
+                <button id="btn-9" className="num-button" onClick={() => this.handleNumberClick(9)}>9</button>
+                <button id="divide" className="operator-button" onClick={() => this.handleOperatorClick('divide')}>&#247;</button>
             </div>
             <div className="keypad-box">
-                <button className="num-button" onClick={() => this.handleNumberClick(4)}>4</button>
-                <button className="num-button" onClick={() => this.handleNumberClick(5)}>5</button>
-                <button className="num-button" onClick={() => this.handleNumberClick(6)}>6</button>
-                <button className="operator-button" onClick={() => this.handleOperatorClick('times')}>&#215;</button>
+                <button id="btn-4" className="num-button" onClick={() => this.handleNumberClick(4)}>4</button>
+                <button id="btn-5" className="num-button" onClick={() => this.handleNumberClick(5)}>5</button>
+                <button id="btn-6" className="num-button" onClick={() => this.handleNumberClick(6)}>6</button>
+                <button id="times" className="operator-button" onClick={() => this.handleOperatorClick('times')}>&#215;</button>
             </div>
             <div className="keypad-box">
-                <button className="num-button" onClick={() => this.handleNumberClick(1)}>1</button>
-                <button className="num-button" onClick={() => this.handleNumberClick(2)}>2</button>
-                <button className="num-button" onClick={() => this.handleNumberClick(3)}>3</button>
-                <button className="operator-button" onClick={() => this.handleOperatorClick('minus')}>&#8722;</button>
+                <button id="btn-1" className="num-button" onClick={() => this.handleNumberClick(1)}>1</button>
+                <button id="btn-2" className="num-button" onClick={() => this.handleNumberClick(2)}>2</button>
+                <button id="btn-3" className="num-button" onClick={() => this.handleNumberClick(3)}>3</button>
+                <button id="minus" className="operator-button" onClick={() => this.handleOperatorClick('minus')}>&#8722;</button>
             </div>
             <div className="keypad-box">
-                <button className="num-button" onClick={() => this.handleNumberClick(0)}>0</button>
-                <button className="num-button dbl-zero-btn" onClick={() => this.handleNumberClick("dbl")}>00</button>
-                <button onClick={() => this.handleNumberClick('.')} className="num-button">.</button>
-                <button className="operator-button" onClick={() => this.handleOperatorClick('plus')}>&#43;</button>
+                <button id="btn-0" className="num-button" onClick={() => this.handleNumberClick(0)}>0</button>
+                <button id="dbl" className="num-button dbl-zero-btn" onClick={() => this.handleNumberClick("dbl")}>00</button>
+                <button id="dot" onClick={() => this.handleNumberClick('.')} className="num-button">.</button>
+                <button id="plus" className="operator-button" onClick={() => this.handleOperatorClick('plus')}>&#43;</button>
             </div>
             <div className="eql-btn-box">
-              <button className="clear-btn" onClick={this.clearInput}>C</button>
-              <button className="equal-btn" onClick={this.handleEqualClick}>&#61;</button>
+              <button id="clearBtn" className="clear-btn" onClick={this.clearInput}>C</button>
+              <button id="equalBtn" className="equal-btn" onClick={this.handleEqualClick}>&#61;</button>
               <div className="fakey-box"></div>
             </div>
           </div>
